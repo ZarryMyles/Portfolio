@@ -1,17 +1,33 @@
 {
-  "name": "port-next",
-  "version": "0.1.0",
+  "name": "mahanth-portfolio",
+  "version": "1.0.0",
   "private": true,
+  "description": "A clean, beautiful and simple responsive portfolio website!",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZarryMyles/Portfolio"
+  },
+  "author": "Mahanth",
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/ZarryMyles/Portfolio/issues"
+  },
+  "homepage": "https://github.com/ZarryMyles/Portfolio#readme",
   "dependencies": {
     "@next/font": "13.0.7",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }
