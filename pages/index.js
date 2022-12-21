@@ -10,6 +10,7 @@ initScrollReveal(targetElements, defaultProps);
 
 // Components
 import { Landing } from "../components/Landing";
+import { About } from "../components/About";
 
 export default function Home() {
   return (
@@ -22,16 +23,17 @@ export default function Home() {
           content="Mahantha N | MERN Stack Web Developer"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
         <Script
           defer
           src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
         />
         <Script async defer src="https://buttons.github.io/buttons.js" />
       </Head>
-      <main className="bg-background font-montserrat">
+      <main className="bg-light-text font-montserrat">
         <div id="top"></div>
         <Landing />
+        <About />
       </main>
     </>
   );
