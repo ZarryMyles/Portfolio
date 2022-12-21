@@ -13,6 +13,7 @@ import { Landing } from "../components/Landing";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
+import { Work } from "../components/Work";
 
 export default function Home() {
   return (
@@ -84,6 +85,7 @@ export default function Home() {
         <div id="top"></div>
         <Landing />
         <About />
+        <Work />
         <Contact />
         <Footer />
       </main>
