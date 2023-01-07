@@ -8,7 +8,7 @@ export const Contact = () => {
       className="mx-auto flex flex-col items-center justify-start"
     >
       <h1 className="hidden md:block text-[#DADDE0] text-[120px] leading-[90px] font-montserrat-extrabold">
-        Let's Connect
+        Connect with me
       </h1>
       <div className="bg-primary w-full text-light-text py-14 md:py-20 flex flex-col items-center">
         <h1 className="block md:hidden font-montserrat-bold text-2xl leading-[34px] mb-6">

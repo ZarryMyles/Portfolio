@@ -2,12 +2,12 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer class="footer navbar-static-bottom">
-      <div class="mx-auto bg-dark flex flex-col items-center text-footer-gray">
+    <footer className="footer navbar-static-bottom">
+      <div className="mx-auto bg-dark flex flex-col items-center text-footer-gray">
         <a href="#top">
           {" "}
           <img
-            className="my-[40px] focus:outline-none"
+            className="my-[40px] focus:outline-none hover:scale-125 duration-300"
             src="/images/footer-arrow.svg"
             alt="Scroll up"
           />
@@ -15,26 +15,30 @@ export const Footer = () => {
         <div className="flex flex-row mb-7">
           <a
             href="mailto:mahantha.dev@gmail.com"
-            className="mr-8"
+            className="mr-8 hover:-translate-y-[2px] duration-300"
             target="_blank"
           >
             <img src="/images/Logos/mail.svg" alt="Email" />
           </a>
           <a
             href="https://www.linkedin.com/in/mahanth-n/"
-            className="mr-8"
+            className="mr-8 hover:-translate-y-[2px] duration-300"
             target="_blank"
           >
             <img src="/images/Logos/linkedin.svg" alt="LinkedIn" />
           </a>
           <a
             href="https://github.com/ZarryMyles"
-            className="mr-8"
+            className="mr-8 hover:-translate-y-[2px] duration-300"
             target="_blank"
           >
             <img src="/images/Logos/github.svg" alt="Github" />
           </a>
-          <a href="https://codepen.io/zarrymyles/" target="_blank">
+          <a
+            href="https://codepen.io/zarrymyles/"
+            target="_blank"
+            className="hover:-translate-y-[2px] duration-300"
+          >
             <img src="/images/Logos/codepen.svg" alt="Codepen" />
           </a>
         </div>
@@ -44,13 +48,13 @@ export const Footer = () => {
           <a
             href="https://www.shradha.design/"
             target="_blank"
-            className="underline"
+            className="underline hover:text-white duration-200"
           >
             Shradha
           </a>
         </p>
         {/* <a
-          class="github-button leading-7 p-2.5 flex flex-row font-montserrat-medium bg-[#f5f5f5] rounded-md mb-[30px] text-black"
+          className="github-button leading-7 p-2.5 flex flex-row font-montserrat-medium bg-[#f5f5f5] rounded-md mb-[30px] text-black"
           href="https://github.com/ZarryMyles"
           data-size="large"
           aria-label="Follow @ZarryMyles on GitHub"

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Script from "next/script";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useState } from "react";
 
 import initScrollReveal from "../scripts/scrollReveal";
 // import initTiltEffect from "../scripts/tiltAnimation";
@@ -15,59 +14,21 @@ import { Landing } from "../components/Landing";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
-import { Work } from "../components/Work";
+import Work from "../components/Work";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
-  const [mousePosition, setmousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-  const [cursorVariant, setCursorVariant] = useState("hidden");
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setmousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    window.addEventListener("mousemove", mouseMove);
+  // Work Modal
+  const [modalVisible, setModalVisible] = useState(false);
 
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
-
-  const vars = {
-    hover: {
-      x: 0,
-      y: 0,
-      bounce: 0,
-      background: "url(/images/cursor.png);",
-      backgroundClip: "border-box",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      transition: {
-        type: "spring",
-        bounce: 0,
-        mass: 0.1,
-      },
-    },
-    hidden: {
-      x: mousePosition.x - 40,
-      y: mousePosition.y - 40,
-      bounce: 0,
-      transition: {
-        type: "spring",
-        bounce: 0,
-        mass: 0.1,
-      },
-    },
+  const showModal = () => {
+    setModalVisible(true);
+    console.log("Modal Visible: ", modalVisible);
   };
-
-  const cursorenable = () => setCursorVariant("hover");
-  const cursordisable = () => setCursorVariant("hidden");
+  const hideModal = () => {
+    setModalVisible(false);
+    console.log("falsed it");
+  };
 
   return (
     <>
@@ -135,24 +96,16 @@ export default function Home() {
       </Head>
 
       <main className="bg-light-text font-montserrat">
-        <motion.div
-          className="z-20 h-[80px] rotating w-[80px] fixed top-0 left-0"
-          variants={vars}
-          animate={cursorVariant}
-          style={{
-            background: "url(/images/cursor.png);",
-            backgroundClip: "border-box",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        />
         <Navbar />
         <div id="top"></div>
         <Landing />
-        <About />
+        <About onClick={hideModal} />
         <div id="work"></div>
-        <Work cursorShow={cursorenable} cursorHide={cursordisable} />
+        <Work
+          showModal={showModal}
+          modalVisible={modalVisible}
+          hideModal={hideModal}
+        />
         <Contact />
         <Footer />
       </main>
