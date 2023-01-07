@@ -3,7 +3,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <footer class="footer navbar-static-bottom">
-      <div class="container mx-auto bg-dark flex flex-col items-center text-footer-gray">
+      <div class="mx-auto bg-dark flex flex-col items-center text-footer-gray">
         <a href="#top">
           {" "}
           <img
@@ -40,15 +40,14 @@ export const Footer = () => {
         </div>
         <div className="h-0.5 w-2/4 bg-[#242424] mb-2" />
         <p className="text-xs leading-5 mb-[14px]">
-          © 2022 | Designed by{" "}
+          © {new Date().getFullYear()} | Built with ❤️ and ☕| Designed by{" "}
           <a
             href="https://www.shradha.design/"
             target="_blank"
             className="underline"
           >
             Shradha
-          </a>{" "}
-          | Built with ❤️ and ☕
+          </a>
         </p>
         {/* <a
           class="github-button leading-7 p-2.5 flex flex-row font-montserrat-medium bg-[#f5f5f5] rounded-md mb-[30px] text-black"
