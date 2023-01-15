@@ -1,13 +1,7 @@
 import Head from "next/head";
-import Script from "next/script";
-import { useState } from "react";
-
-import initScrollReveal from "../scripts/scrollReveal";
-// import initTiltEffect from "../scripts/tiltAnimation";
-import { targetElements, defaultProps } from "../scripts/scrollRevealConfig";
-
-initScrollReveal(targetElements, defaultProps);
-// initTiltEffect();
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Components
 import { Landing } from "../components/Landing";
@@ -20,15 +14,17 @@ import Navbar from "../components/Navbar";
 export default function Home() {
   // Work Modal
   const [modalVisible, setModalVisible] = useState(false);
-
   const showModal = () => {
     setModalVisible(true);
-    console.log("Modal Visible: ", modalVisible);
   };
   const hideModal = () => {
     setModalVisible(false);
-    console.log("falsed it");
   };
+
+  // AOS
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -88,17 +84,12 @@ export default function Home() {
         <link rel="manifest" href="/favicon/site.webmanifest"></link>
 
         {/* Scripts */}
-        <Script
-          defer
-          src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-        />
-        <Script async defer src="https://buttons.github.io/buttons.js" />
       </Head>
 
-      <main className="bg-light-text font-montserrat">
+      <main className="bg-light-text font-montserrat overflow-x-hidden">
         <Navbar />
         <div id="top"></div>
-        <Landing />
+        <Landing className="bg-red-300" />
         <About onClick={hideModal} />
         <div id="work"></div>
         <Work

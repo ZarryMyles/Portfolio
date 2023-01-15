@@ -99,7 +99,12 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navbar */}
-      <div className="w-full text-dark hidden zed md:flex absolute justify-between items-center px-[108px] md:py-8">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="400"
+        data-aos-delay="400"
+        className="w-full text-dark hidden zed md:flex absolute justify-between items-center px-[108px] md:py-8"
+      >
         <a href="/#top" className="flex items-center">
           <img src="/images/Logos/mahanth.svg" alt="Mahanth Logo" />
         </a>

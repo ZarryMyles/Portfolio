@@ -21,6 +21,7 @@
   "homepage": "https://github.com/ZarryMyles/Portfolio#readme",
   "dependencies": {
     "@next/font": "^13.0.7",
+    "aos": "^2.3.4",
     "framer-motion": "^8.0.2",
     "jquery": "^3.6.3",
     "next": "13.0.7",

@@ -9,14 +9,27 @@ export const About = () => {
         id="about"
         className="text-light-text mb-[210px] mx-auto hidden md:flex flex-col relative mt-[110px] pt-[50px]"
       >
-        <h1 className="text-[#DADDE0] ml-[108px] text-[120px] leading-[90px] font-montserrat-extrabold">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-delay="200"
+          className="text-[#DADDE0] ml-[108px] text-[120px] leading-[90px] font-montserrat-extrabold"
+        >
           About Me
         </h1>
-        <div className="absolute z-0 top-[50px] right-0 bg-primary h-[150px] w-1/4" />
-        <div className="bg-dark z-10 flex flex-row w-[80%] -pb-16 relative">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="500"
+          className="absolute z-0 top-[50px] right-0 bg-primary h-[150px] w-1/4"
+        />
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="bg-dark z-10 flex flex-row w-[80%] -pb-16 relative"
+        >
           <img
             src="/images/profile.png"
-            alt="pic of me"
+            alt="pic of me :)"
             className="w-[450px] h-[450px] absolute top-24 left-[108px]"
           />
           <div className="flex flex-col items-start justify-center ml-[640px] mt-24 mb-14 mr-[110px] tracking-[0.02em]">
