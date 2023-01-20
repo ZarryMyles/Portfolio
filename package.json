@@ -15,19 +15,14 @@
   },
   "author": "Mahanth",
   "license": "GNU General Public License v3.0",
-  "bugs": {
-    "url": "https://github.com/ZarryMyles/Portfolio/issues"
-  },
-  "homepage": "https://github.com/ZarryMyles/Portfolio#readme",
+  "homepage": "https://mahanth.dev",
   "dependencies": {
     "@next/font": "^13.0.7",
     "aos": "^2.3.4",
-    "framer-motion": "^8.0.2",
     "jquery": "^3.6.3",
     "next": "13.0.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "vanilla-tilt": "^1.8.0"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

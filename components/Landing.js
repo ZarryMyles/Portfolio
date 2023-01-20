@@ -7,9 +7,22 @@ export const Landing = () => {
       <div className="hero-title font-montserrat-medium md:font-montserrat px-[22px] md:px-[108px] h-screen flex flex-col justify-center items-start">
         <p
           data-aos="fade-right"
-          data-aos-duration="700"
-          className="text-2xl md:text-[38px] leading-[34px] md:leading-[62px]"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out-cubic"
+          className="hidden md:text-[38px] leading-[34px] md:leading-[62px]"
         >
+          Hi, I'm{" "}
+          <span className="font-montserrat-bold text-primary">Mahanth</span>.
+          <br />I design and build
+          <span className="font-montserrat-bold"> websites </span>
+          focused on <span className="hidden md:block" />
+          <span className="font-montserrat-bold ">
+            {" "}
+            simplicity and performance
+          </span>
+          .
+        </p>
+        <p className="text-2xl md:hidden leading-[34px]">
           Hi, I'm{" "}
           <span className="font-montserrat-bold text-primary">Mahanth</span>.
           <br />I design and build
@@ -23,7 +36,7 @@ export const Landing = () => {
         </p>
         <a
           data-aos="fade-right"
-          data-aos-duration="700"
+          data-aos-duration="900"
           data-aos-delay="200"
           href="#contact"
           className="hidden md:block mt-[14px]"

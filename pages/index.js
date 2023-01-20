@@ -23,7 +23,9 @@ export default function Home() {
 
   // AOS
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: "mobile",
+    });
   }, []);
 
   return (
@@ -38,7 +40,7 @@ export default function Home() {
         <meta name="author" content="Mahantha N" />
 
         {/* Open Graph */}
-        <meta property="og:url" content="https://www.mahanth.tech" />
+        <meta property="og:url" content="https://www.mahanth.dev" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Mahantha - Web Developer" />
         <meta
@@ -51,8 +53,8 @@ export default function Home() {
           content="https://res.cloudinary.com/zarry/image/upload/v1671608478/profile_zuk8mn.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="mahanth.tech" />
-        <meta property="twitter:url" content="https://www.mahanth.tech/" />
+        <meta property="twitter:domain" content="mahanth.dev" />
+        <meta property="twitter:url" content="https://www.mahanth.dev/" />
         <meta name="twitter:title" content="Mahantha - Web Developer" />
         <meta
           name="twitter:description"

@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 My personal portfolio website, built with Next.js and Tailwind CSS.
 
+Deployed at [https://mahanth.dev/](https://mahanth.dev/).
+
 Designed by [Shradha](https://shradha.design/).
 
 ## Getting Started
