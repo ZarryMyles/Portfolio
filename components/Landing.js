@@ -9,7 +9,7 @@ export const Landing = () => {
           data-aos="fade-right"
           data-aos-duration="900"
           data-aos-easing="ease-in-out-cubic"
-          className="hidden md:text-[38px] leading-[34px] md:leading-[62px]"
+          className="hidden md:block md:text-[38px] leading-[34px] md:leading-[62px]"
         >
           Hi, I'm{" "}
           <span className="font-montserrat-bold text-primary">Mahanth</span>.
@@ -37,7 +37,7 @@ export const Landing = () => {
         <a
           data-aos="fade-right"
           data-aos-duration="900"
-          data-aos-delay="200"
+          data-aos-delay="300"
           href="#contact"
           className="hidden md:block mt-[14px]"
         >
