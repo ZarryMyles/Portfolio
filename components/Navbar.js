@@ -7,21 +7,25 @@ export default function Navbar() {
     {
       name: "About",
       link: "#about",
+      linkMobile: "#aboutMobile",
       targ: "_self",
     },
     {
       name: "Work",
       link: "#work",
+      linkMobile: "#work",
       targ: "_self",
     },
     {
       name: "Contact",
       link: "#contact",
+      linkMobile: "#contact",
       targ: "_self",
     },
     {
       name: "Resume",
       link: resumeLink,
+      linkMobile: resumeLink,
       targ: "_blank",
     },
   ];
@@ -45,7 +49,7 @@ export default function Navbar() {
         >
           {links.map((value, key) => (
             <div key={key} className="block" onClick={handleToggle}>
-              <a href={value.link} target={value.targ} rel="noreferrer">
+              <a href={value.linkMobile} target={value.targ} rel="noreferrer">
                 {value.name}
               </a>
             </div>

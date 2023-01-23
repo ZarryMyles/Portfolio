@@ -15,21 +15,21 @@ export const Footer = () => {
         <div className="flex flex-row mb-7">
           <a
             href="mailto:mahantha.dev@gmail.com"
-            className="mr-8 hover:-translate-y-[2px] duration-300"
+            className="mr-8 md:hover:-translate-y-[2px] duration-300 "
             target="_blank"
           >
             <img src="/images/Logos/mail.svg" alt="Email" />
           </a>
           <a
             href="https://www.linkedin.com/in/mahanth-n/"
-            className="mr-8 hover:-translate-y-[2px] duration-300"
+            className="mr-8 md:hover:-translate-y-[2px] duration-300"
             target="_blank"
           >
             <img src="/images/Logos/linkedin.svg" alt="LinkedIn" />
           </a>
           <a
             href="https://github.com/ZarryMyles"
-            className="mr-8 hover:-translate-y-[2px] duration-300"
+            className="mr-8 md:hover:-translate-y-[2px] duration-300"
             target="_blank"
           >
             <img src="/images/Logos/github.svg" alt="Github" />
@@ -37,14 +37,14 @@ export const Footer = () => {
           <a
             href="https://codepen.io/zarrymyles/"
             target="_blank"
-            className="hover:-translate-y-[2px] duration-300"
+            className="md:hover:-translate-y-[2px] duration-300"
           >
             <img src="/images/Logos/codepen.svg" alt="Codepen" />
           </a>
         </div>
         <div className="h-0.5 w-2/4 bg-[#242424] mb-2" />
         <p className="text-xs leading-5 mb-[14px]">
-          © {new Date().getFullYear()} | Built with ❤️ and ☕| Designed by{" "}
+          © {new Date().getFullYear()} | Built with ❤️ and ☕ | Designed by{" "}
           <a
             href="https://www.shradha.design/"
             target="_blank"

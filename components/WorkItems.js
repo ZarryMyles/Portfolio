@@ -82,15 +82,11 @@ export const WorkItemsDesk = ({
         onClick={() => togglePopUp()} //This is so the modal closes when clicked outside
         className={
           itemNo % 2
-            ? "w-[1000px] z-20 hover:cursor-pointer relative bg-no-repeat bg-center bg-fixed bg-clip-border bg-contain h-[470px] flex justify-center items-center ml-auto hover:shadow-2xl transition-all duration-300 ease-in-out"
-            : "w-[1000px] z-20 hover:cursor-pointer relative bg-no-repeat bg-center bg-fixed bg-clip-border bg-contain h-[470px] flex justify-center items-center hover:shadow-2xl transition-all duration-300 ease-in-out"
+            ? "w-[1000px] z-20 hover:cursor-pointer relative bg-no-repeat bg-center bg-clip-border bg-contain h-[470px] flex justify-center items-center ml-auto hover:shadow-2xl transition-all duration-300 ease-in-out"
+            : "w-[1000px] z-20 hover:cursor-pointer relative bg-no-repeat bg-center bg-clip-border bg-contain h-[470px] flex justify-center items-center hover:shadow-2xl transition-all duration-300 ease-in-out"
         }
         style={{
-          background: `linear-gradient(0deg, rgba(4, 4, 4, 0.65), rgba(4, 4, 4, 0.65)), url(${image});`,
-          backgroundClip: "border-box",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundImage: `linear-gradient(0deg, rgba(4, 4, 4, 0.65), rgba(4, 4, 4, 0.65)), url(${image})`,
         }}
       >
         <h1 className="font-montserrat-extrabold text-[40px] text-light-text">

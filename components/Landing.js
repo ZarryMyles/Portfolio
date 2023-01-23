@@ -43,11 +43,13 @@ export const Landing = () => {
         >
           <PrimaryButton content="Get in touch" />
         </a>
-        <p className="md:hidden flex flex-row items-center justify-center text-xl leading-5 font-montserrat-bold mt-9">
-          Know More
-          <span className="arrow primary next ml-[15px]" />
-          <span className="arrow secondary next" />
-        </p>
+        <a href="#about" className="md:hidden">
+          <p className="flex flex-row items-center justify-center text-xl leading-5 font-montserrat-bold mt-9">
+            Know More
+            <span className="arrow primary next ml-[15px]" />
+            <span className="arrow secondary next" />
+          </p>
+        </a>
       </div>
       {/* Arrows at bottom of section */}
       <div className="hidden mb-5 md:flex flex-row items-center justify-center absolute bottom-0 left-0 right-0">

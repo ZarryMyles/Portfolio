@@ -24,9 +24,7 @@ export default function Home() {
 
   // AOS
   useEffect(() => {
-    AOS.init({
-      disable: "mobile",
-    });
+    AOS.init();
   }, []);
 
   // Loader

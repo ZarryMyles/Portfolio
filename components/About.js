@@ -59,7 +59,7 @@ export const About = () => {
 
       {/* Mobile View */}
       <section
-        id="about"
+        id="aboutMobile"
         className="md:hidden min-h-screen bg-dark text-light-text container mx-auto px-[25px] py-14"
       >
         <div className="mx-auto flex flex-col items-center ">
