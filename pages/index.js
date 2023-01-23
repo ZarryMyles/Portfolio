@@ -10,6 +10,7 @@ import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import Work from "../components/Work";
 import Navbar from "../components/Navbar";
+import Loader from "../components/Loader";
 
 export default function Home() {
   // Work Modal
@@ -26,6 +27,14 @@ export default function Home() {
     AOS.init({
       disable: "mobile",
     });
+  }, []);
+
+  // Loader
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
 
   return (
@@ -88,20 +97,24 @@ export default function Home() {
         {/* Scripts */}
       </Head>
 
-      <main className="bg-light-text font-montserrat overflow-x-hidden">
-        <Navbar />
-        <div id="top"></div>
-        <Landing className="bg-red-300" />
-        <About onClick={hideModal} />
-        <div id="work"></div>
-        <Work
-          showModal={showModal}
-          modalVisible={modalVisible}
-          hideModal={hideModal}
-        />
-        <Contact />
-        <Footer />
-      </main>
+      {loading ? (
+        <Loader />
+      ) : (
+        <main className="bg-light-text font-montserrat overflow-x-hidden">
+          <Navbar />
+          <div id="top"></div>
+          <Landing className="bg-red-300" />
+          <About onClick={hideModal} />
+          <div id="work"></div>
+          <Work
+            showModal={showModal}
+            modalVisible={modalVisible}
+            hideModal={hideModal}
+          />
+          <Contact />
+          <Footer />
+        </main>
+      )}
     </>
   );
 }
