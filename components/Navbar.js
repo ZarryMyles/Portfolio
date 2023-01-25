@@ -1,8 +1,10 @@
 import React from "react";
 import $ from "jquery";
 
+const resumeLink =
+  "https://drive.google.com/file/d/1llDLaXo4YKYUuBuAvz95W2QELqthK-1z/view?usp=share_link";
+
 export default function Navbar() {
-  const resumeLink = process.env.RESUME_URL;
   const links = [
     {
       name: "About",
