@@ -25,8 +25,11 @@ export const WorkItemsMob = ({
             Tech Stack
           </h1>
           <div className="flex flex-wrap gap-2">
-            {tech.split(",").map((tech) => (
-              <span className="bg-dark-gray text-light-text px-3 py-[5px] rounded-md">
+            {tech.split(",").map((tech, key) => (
+              <span
+                key={key}
+                className="bg-dark-gray text-light-text px-3 py-[5px] rounded-md"
+              >
                 {tech}
               </span>
             ))}
@@ -133,8 +136,11 @@ export const WorkModalDesk = ({
           Tech Stack
         </h1>
         <div className="flex flex-wrap gap-2">
-          {tech.split(",").map((tech) => (
-            <span className="bg-dark-gray leading-7 text-light-text px-3 py-[5px] rounded-md">
+          {tech.split(",").map((tech, key) => (
+            <span
+              key={key}
+              className="bg-dark-gray leading-7 text-light-text px-3 py-[5px] rounded-md"
+            >
               {tech}
             </span>
           ))}
