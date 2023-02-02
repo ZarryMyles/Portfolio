@@ -1,7 +1,7 @@
 import React from "react";
 import { PrimaryButton } from "./elements/buttons";
 
-export const About = () => {
+export const About = ({ resume }) => {
   return (
     <>
       {/* Desktop View */}
@@ -46,11 +46,7 @@ export const About = () => {
               into CMS-ified websites streamlined for performance, on time and
               in budget.
             </p>
-            <a
-              target="_blank"
-              href={process.env.RESUME_URL}
-              className="mt-[21px]"
-            >
+            <a target="_blank" href={resume} className="mt-[21px]">
               <PrimaryButton content="Resume" />
             </a>
           </div>
@@ -97,7 +93,7 @@ export const About = () => {
           </div>
           <a
             target="_blank"
-            href={process.env.RESUME_URL}
+            href={resume}
             className="px-5 py-[14px] bg-primary text-xl rounded-[4px] font-montserrat-bold mt-12"
           >
             Resume

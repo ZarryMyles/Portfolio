@@ -12,6 +12,10 @@ import Work from "../components/Work";
 import Navbar from "../components/Navbar";
 import Loader from "../components/Loader";
 
+// Resume Link
+const resumeLink =
+  "https://drive.google.com/file/d/1llDLaXo4YKYUuBuAvz95W2QELqthK-1z/view?usp=share_link";
+
 export default function Home() {
   // Work Modal
   const [modalVisible, setModalVisible] = useState(false);
@@ -99,10 +103,10 @@ export default function Home() {
         <Loader />
       ) : (
         <main className="bg-light-text font-montserrat overflow-x-hidden">
-          <Navbar />
+          <Navbar resume={resumeLink} />
           <div id="top"></div>
           <Landing className="bg-red-300" />
-          <About onClick={hideModal} />
+          <About onClick={hideModal} resume={resumeLink} />
           <div id="work"></div>
           <Work
             showModal={showModal}

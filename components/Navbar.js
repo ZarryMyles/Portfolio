@@ -1,10 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
-const resumeLink =
-  "https://drive.google.com/file/d/1llDLaXo4YKYUuBuAvz95W2QELqthK-1z/view?usp=share_link";
-
-export default function Navbar() {
+export default function Navbar({ resume }) {
   const links = [
     {
       name: "About",
@@ -26,8 +23,8 @@ export default function Navbar() {
     },
     {
       name: "Resume",
-      link: resumeLink,
-      linkMobile: resumeLink,
+      link: resume,
+      linkMobile: resume,
       targ: "_blank",
     },
   ];
