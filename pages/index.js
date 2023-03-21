@@ -13,8 +13,7 @@ import Navbar from "../components/Navbar";
 import Loader from "../components/Loader";
 
 // Resume Link
-const resumeLink =
-  "https://drive.google.com/file/d/1llDLaXo4YKYUuBuAvz95W2QELqthK-1z/view?usp=share_link";
+const resumeLink = process.env.NEXT_PUBLIC_RESUME_URL;
 
 export default function Home() {
   // Work Modal
