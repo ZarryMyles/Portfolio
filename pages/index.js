@@ -63,8 +63,9 @@ export default function Home() {
           content="A MERN stack Developer based in Bangalore who builds websites focused on simplicity and performance."
         />
         <meta
-          property="og:image"
-          content="https://res.cloudinary.com/zarry/image/upload/v1689525918/imageedit_2_4571267636_seasep.png"
+          property="og:image:secure_url"
+          itemProp="image"
+          content="https://res.cloudinary.com/zarry/image/upload/v1689526694/FinalMeta_vckepf.png"
         />
 
         {/* Twitter Meta Tags */}
@@ -78,7 +79,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/zarry/image/upload/v1689525918/imageedit_2_4571267636_seasep.png"
+          content="https://res.cloudinary.com/zarry/image/upload/v1689526694/FinalMeta_vckepf.png"
         />
 
         {/* Meta Tags Generated via https://www.opengraph.xyz */}
