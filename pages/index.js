@@ -64,7 +64,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://res.cloudinary.com/zarry/image/upload/v1671608478/profile_zuk8mn.png"
+          content="https://res.cloudinary.com/zarry/image/upload/v1689525918/imageedit_2_4571267636_seasep.png"
         />
 
         {/* Twitter Meta Tags */}
@@ -78,7 +78,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://res.cloudinary.com/zarry/image/upload/v1671608478/profile_zuk8mn.png"
+          content="https://res.cloudinary.com/zarry/image/upload/v1689525918/imageedit_2_4571267636_seasep.png"
         />
 
         {/* Meta Tags Generated via https://www.opengraph.xyz */}
