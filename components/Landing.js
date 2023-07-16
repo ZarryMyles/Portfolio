@@ -22,7 +22,12 @@ export const Landing = () => {
           </span>
           .
         </p>
-        <p className="text-2xl md:hidden leading-[34px]">
+        <p
+          data-aos="fade-right"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out-cubic"
+          className="text-2xl md:hidden leading-[34px]"
+        >
           Hi, I'm{" "}
           <span className="font-montserrat-bold text-primary">Mahanth</span>.
           <br />I design and build
@@ -43,7 +48,13 @@ export const Landing = () => {
         >
           <PrimaryButton content="Get in touch" />
         </a>
-        <a href="#about" className="md:hidden">
+        <a
+          data-aos="fade-right"
+          data-aos-duration="900"
+          data-aos-delay="300"
+          href="#about"
+          className="md:hidden"
+        >
           <p className="flex flex-row items-center justify-center text-xl leading-5 font-montserrat-bold mt-9">
             Know More
             <span className="arrow primary next ml-[15px]" />

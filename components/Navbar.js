@@ -39,7 +39,7 @@ export default function Navbar({ resume }) {
     <div className="overflow-hidden w-screen">
       {/* Mobile Navbar */}
       <div className="md:hidden overflow-hidden pl-5 py-1 top-0 fixed z-50 w-full flex justify-between items-center h-auto">
-        <a href="/#top">
+        <a data-aos="fade-down-right" data-aos-duration="600" href="/#top">
           <img src="/images/Logos/mahanth.svg" alt="Mahanth Logo" />
         </a>
         <nav
@@ -54,7 +54,13 @@ export default function Navbar({ resume }) {
             </div>
           ))}
         </nav>
-        <button onClick={handleToggle} className="z-50 flex" id="sideButton">
+        <button
+          data-aos="fade-down-left"
+          data-aos-duration="600"
+          onClick={handleToggle}
+          className="z-50 flex"
+          id="sideButton"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="60"
@@ -118,7 +124,7 @@ export default function Navbar({ resume }) {
               href={value.link}
               target={value.targ}
               rel="noreferrer"
-              className="text-lg cursor-pointer leading-8 inline-block hover:text-primary no-underline border-none"
+              className="text-lg cursor-pointer leading-8 inline-block hover:text-primary duration-200 no-underline border-none"
             >
               {value.name}
             </a>

@@ -68,7 +68,11 @@ export default function Work({ showModal, hideModal, modalVisible }) {
         onClick={hideModal}
         className="bg-light-text md:hidden text-dark container mx-auto flex flex-col items-center"
       >
-        <h1 className="font-montserrat-bold text-2xl leading-[34px] mt-[88px] mb-6">
+        <h1
+          data-aos="zoom-in"
+          data-aos-duration="300"
+          className="font-montserrat-bold text-2xl leading-[34px] mt-[88px] mb-6"
+        >
           Work
         </h1>
         <div className="flex flex-col gap-16">

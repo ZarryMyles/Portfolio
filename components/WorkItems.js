@@ -13,7 +13,12 @@ export const WorkItemsMob = ({
   itemNo,
 }) => {
   return (
-    <div className="mx-3 rounded-lg bg-dark text-light-text mb-16" key={title}>
+    <div
+      data-aos={itemNo % 2 ? "fade-left" : "fade-right"}
+      data-aos-duration="600"
+      className="mx-3 rounded-lg bg-dark text-light-text mb-16"
+      key={title}
+    >
       <img src={image} alt="hero" className="rounded-t-lg" />
       <div className="py-10 px-7">
         <h1 className="font-montserrat-bold text-xl leading-6 mb-4">{title}</h1>
@@ -79,7 +84,11 @@ export const WorkItemsDesk = ({
   const togglePopUp = () => setShowModal(!showModal);
 
   return (
-    <div className="flex flex-col my-[100px] gap-[100px] z-10 ">
+    <div
+      data-aos={itemNo % 2 ? "fade-left" : "fade-right"}
+      data-aos-duration="600"
+      className="flex flex-col my-[100px] gap-[100px] z-10 "
+    >
       <div
         key={title}
         onClick={() => togglePopUp()} //This is so the modal closes when clicked outside

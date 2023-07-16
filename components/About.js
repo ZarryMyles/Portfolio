@@ -58,7 +58,11 @@ export const About = ({ resume }) => {
         id="aboutMobile"
         className="md:hidden min-h-screen bg-dark text-light-text container mx-auto px-[25px] py-14"
       >
-        <div className="mx-auto flex flex-col items-center ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="600"
+          className="mx-auto flex flex-col items-center "
+        >
           <h1 className="text-2xl leading-9 font-montserrat-bold">About me</h1>
           <img
             src="/images/profile.png"
