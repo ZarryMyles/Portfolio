@@ -4,7 +4,7 @@ My personal portfolio website, built with Next.js and Tailwind CSS.
 
 Deployed at [https://mahanth.dev/](https://mahanth.dev/).
 
-Designed by [Shradha](https://shradha.design/).
+Designed by [Shradha](https://sam-ebon-psi.vercel.app/).
 
 ## Getting Started
 

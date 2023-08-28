@@ -46,7 +46,7 @@ export const Footer = () => {
         <p className="text-xs leading-5 mb-[14px]">
           © {new Date().getFullYear()} | Built with ❤️ and ☕ | Designed by{" "}
           <a
-            href="https://www.shradha.design/"
+            href="https://sam-ebon-psi.vercel.app/"
             target="_blank"
             className="underline hover:text-white duration-200"
           >

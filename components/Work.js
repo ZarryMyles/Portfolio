@@ -22,7 +22,7 @@ export default function Work({ showModal, hideModal, modalVisible }) {
       p2: "Framer Motion, Animate.Css and Swiper were some of the dependancies used to pull off the animations.",
       tech: "ReactJs, Tailwind CSS, Vercel (Hosting)",
       sourceCode: "https://github.com/ZarryMyles/sam/tree/master",
-      liveDemo: "https://www.shradha.design/",
+      liveDemo: "https://sam-ebon-psi.vercel.app/",
       buttons: 2,
     },
     {
