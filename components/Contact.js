@@ -10,7 +10,7 @@ export const Contact = () => {
       <h1
         data-aos="fade-up"
         data-aos-duration="700"
-        className="hidden md:block text-[#DADDE0] text-[120px] leading-[90px] font-montserrat-extrabold"
+        className="hidden md:block text-[#DADDE0] text-[120px] leading-[90px] font-mont font-extrabold"
       >
         Connect with me
       </h1>
@@ -19,13 +19,13 @@ export const Contact = () => {
         data-aos-duration="700"
         className="bg-primary w-full text-light-text py-14 md:py-20 flex flex-col items-center"
       >
-        <h1 className="block md:hidden font-montserrat-bold text-2xl leading-[34px] mb-6">
+        <h1 className="block md:hidden font-mont font-bold text-2xl leading-[34px] mb-6">
           Contact
         </h1>
-        <p className="font-montserrat-medium md:hidden text-lg leading-[30px] mb-4">
+        <p className="font-mont font-medium md:hidden text-lg leading-[30px] mb-4">
           Let's get to Work :)
         </p>
-        <p className="font-montserrat-bold hidden md:block text-[32px] leading-[60px] mb-5">
+        <p className="font-mont font-bold hidden md:block text-[32px] leading-[60px] mb-5">
           Let's get to Work :)
         </p>
         <a

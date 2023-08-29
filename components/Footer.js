@@ -43,7 +43,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="h-0.5 w-2/4 bg-[#242424] mb-2" />
-        <p className="text-xs leading-5 mb-[14px]">
+        <p className="text-xs leading-5 mb-[14px] font-mont">
           © {new Date().getFullYear()} | Built with ❤️ and ☕ | Designed by{" "}
           <a
             href="https://sam-ebon-psi.vercel.app/"
@@ -54,7 +54,7 @@ export const Footer = () => {
           </a>
         </p>
         {/* <a
-          className="github-button leading-7 p-2.5 flex flex-row font-montserrat-medium bg-[#f5f5f5] rounded-md mb-[30px] text-black"
+          className="github-button leading-7 p-2.5 flex flex-row font-mont font-medium bg-[#f5f5f5] rounded-md mb-[30px] text-black"
           href="https://github.com/ZarryMyles"
           data-size="large"
           aria-label="Follow @ZarryMyles on GitHub"

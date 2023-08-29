@@ -71,7 +71,7 @@ export default function Work({ showModal, hideModal, modalVisible }) {
         <h1
           data-aos="zoom-in"
           data-aos-duration="300"
-          className="font-montserrat-bold text-2xl leading-[34px] mt-[88px] mb-6"
+          className="font-mont font-bold text-2xl leading-[34px] mt-[88px] mb-6"
         >
           Work
         </h1>
@@ -97,16 +97,16 @@ export default function Work({ showModal, hideModal, modalVisible }) {
       <section className="hidden mx-auto md:flex flex-col mt-[100px]">
         {/* Design Elements (Try to make this modular somehow? :) ) */}
         <div className="h-full relative w-full ">
-          <h1 className="absolute text-[#DADDE0] top-[120px] left-[20px] font-montserrat-extrabold text-[120px] leading-[135px] -rotate-90">
+          <h1 className="absolute text-[#DADDE0] top-[120px] left-[20px] font-mont font-extrabold text-[120px] leading-[135px] -rotate-90">
             Work
           </h1>
-          <h1 className="absolute text-[#DADDE0] top-[650px] right-[20px] font-montserrat-extrabold text-[120px] leading-[135px] -rotate-90">
+          <h1 className="absolute text-[#DADDE0] top-[650px] right-[20px] font-mont font-extrabold text-[120px] leading-[135px] -rotate-90">
             Work
           </h1>
-          <h1 className="absolute text-[#DADDE0] top-[1650px] left-[20px] font-montserrat-extrabold text-[120px] leading-[135px] -rotate-90">
+          <h1 className="absolute text-[#DADDE0] top-[1650px] left-[20px] font-mont font-extrabold text-[120px] leading-[135px] -rotate-90">
             Work
           </h1>
-          <h1 className="absolute text-[#DADDE0] top-[2180px] right-[20px] font-montserrat-extrabold text-[120px] leading-[135px] -rotate-90">
+          <h1 className="absolute text-[#DADDE0] top-[2180px] right-[20px] font-mont font-extrabold text-[120px] leading-[135px] -rotate-90">
             Work
           </h1>
         </div>

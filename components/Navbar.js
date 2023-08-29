@@ -48,7 +48,12 @@ export default function Navbar({ resume }) {
         >
           {links.map((value, key) => (
             <div key={key} className="block" onClick={handleToggle}>
-              <a href={value.linkMobile} target={value.targ} rel="noreferrer">
+              <a
+                href={value.linkMobile}
+                target={value.targ}
+                rel="noreferrer"
+                className="font-mont"
+              >
                 {value.name}
               </a>
             </div>
@@ -117,7 +122,7 @@ export default function Navbar({ resume }) {
         <a href="/#top" className="flex items-center">
           <img src="/images/Logos/mahanth.svg" alt="Mahanth Logo" />
         </a>
-        <div className="flex gap-x-8 font-montserrat-medium flex-row ">
+        <div className="flex gap-x-8 font-mont font-medium flex-row ">
           {links.map((value, key) => (
             <a
               key={key}

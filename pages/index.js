@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Montserrat } from "next/font/google";
 
 // Components
 import { Landing } from "../components/Landing";
@@ -14,6 +15,13 @@ import Loader from "../components/Loader";
 
 // Resume Link
 const resumeLink = process.env.NEXT_PUBLIC_RESUME_URL;
+
+// Font variable
+const montserratFont = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "block",
+});
 
 export default function Home() {
   // Work Modal
@@ -103,7 +111,6 @@ export default function Home() {
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest"></link>
-        <link href="/styles/globals.css" rel="stylesheet" />
 
         {/* Scripts */}
       </Head>
@@ -111,7 +118,9 @@ export default function Home() {
       {loading ? (
         <Loader />
       ) : (
-        <main className="bg-light-text font-montserrat overflow-x-hidden">
+        <main
+          className={`bg-light-text ${montserratFont.variable} overflow-x-hidden`}
+        >
           <Navbar resume={resumeLink} />
           <div id="top"></div>
           <Landing className="bg-red-300" />

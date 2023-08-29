@@ -16,6 +16,9 @@ module.exports = {
         "dark-gray": "#222222",
         "footer-gray": "#808080",
       },
+      fontFamily: {
+        mont: ["var(--font-montserrat)"],
+      },
     },
   },
   plugins: [],

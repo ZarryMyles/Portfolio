@@ -13,7 +13,7 @@ export const About = ({ resume }) => {
           data-aos="fade-up"
           data-aos-duration="700"
           data-aos-delay="200"
-          className="text-[#DADDE0] ml-[108px] text-[120px] leading-[90px] font-montserrat-extrabold"
+          className="text-[#DADDE0] ml-[108px] text-[120px] leading-[90px] font-mont font-extrabold"
         >
           About Me
         </h1>
@@ -33,15 +33,15 @@ export const About = ({ resume }) => {
             className="w-[450px] h-[450px] absolute top-24 left-[108px]"
           />
           <div className="flex flex-col items-start justify-center ml-[640px] mt-24 mb-14 mr-[110px] tracking-[0.02em]">
-            <p className="text-light-text text-base font-montserrat-light">
+            <p className="text-light-text text-base font-mont font-light">
               I help designers, agencies and businesses bring their ideas to
               life.
             </p>
-            <p className="text-light-text text-base font-montserrat-light mt-8">
+            <p className="text-light-text text-base font-mont font-light mt-8">
               Based in Bangalore, I'm a MERN stack Developer who's detail
               oriented and makes sure that the final product is pixel perfect.
             </p>
-            <p className="text-light-text text-base font-montserrat-light mt-8">
+            <p className="text-light-text text-base font-mont font-light mt-8">
               Powered by Figma, VS Code and ☕, I can turn your requirements
               into CMS-ified websites streamlined for performance, on time and
               in budget.
@@ -63,16 +63,16 @@ export const About = ({ resume }) => {
           data-aos-duration="600"
           className="mx-auto flex flex-col items-center "
         >
-          <h1 className="text-2xl leading-9 font-montserrat-bold">About me</h1>
+          <h1 className="text-2xl leading-9 font-mont font-bold">About me</h1>
           <img
             src="/images/profile.png"
             alt="hero"
             className="my-6 rounded-lg"
           />
-          <div className="font-montserrat-medium text-lg">
+          <div className="font-mont font-medium text-lg">
             <p>
               I help{" "}
-              <span className="font-montserrat-bold">
+              <span className="font-mont font-bold">
                 designers, agencies and businesses
               </span>{" "}
               bring their ideas to life.
@@ -80,25 +80,25 @@ export const About = ({ resume }) => {
             <br />
             <p>
               Based in Bangalore, I'm a{" "}
-              <span className="font-montserrat-bold">MERN</span> stack Developer
+              <span className="font-mont font-bold">MERN</span> stack Developer
               who's{" "}
-              <span className="font-montserrat-bold">detail oriented </span>
+              <span className="font-mont font-bold">detail oriented </span>
               and make sure that the final product is pixel perfect.
             </p>
             <br />
             <p>
               Powered by Figma, VS Code and coffee, I can turn your requirements
-              into <span className="font-montserrat-bold">CMS-ified</span>{" "}
+              into <span className="font-mont font-bold">CMS-ified</span>{" "}
               websites streamlined for{" "}
-              <span className="font-montserrat-bold">performance</span>,
-              <span className="font-montserrat-bold"> on time</span> and
-              <span className="font-montserrat-bold"> in budget</span>.
+              <span className="font-mont font-bold">performance</span>,
+              <span className="font-mont font-bold"> on time</span> and
+              <span className="font-mont font-bold"> in budget</span>.
             </p>
           </div>
           <a
             target="_blank"
             href={resume}
-            className="px-5 py-[14px] bg-primary text-xl rounded-[4px] font-montserrat-bold mt-12"
+            className="px-5 py-[14px] bg-primary text-xl rounded-[4px] font-mont font-bold mt-12"
           >
             Resume
           </a>

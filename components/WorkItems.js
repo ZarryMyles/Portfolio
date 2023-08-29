@@ -21,19 +21,19 @@ export const WorkItemsMob = ({
     >
       <img src={image} alt="hero" className="rounded-t-lg" />
       <div className="py-10 px-7">
-        <h1 className="font-montserrat-bold text-xl leading-6 mb-4">{title}</h1>
-        <p className="text-lg">{p1}</p>
+        <h1 className="font-mont font-bold text-xl leading-6 mb-4">{title}</h1>
+        <p className="text-lg font-mont">{p1}</p>
         <br />
-        <p className="text-lg">{p2}</p>
+        <p className="text-lg font-mont">{p2}</p>
         <div className="my-10">
-          <h1 className="font-montserrat-bold text-xl leading-6 mb-4">
+          <h1 className="font-mont font-bold text-xl leading-6 mb-4">
             Tech Stack
           </h1>
           <div className="flex flex-wrap gap-2">
             {tech.split(",").map((tech, key) => (
               <span
                 key={key}
-                className="bg-dark-gray text-light-text px-3 py-[5px] rounded-md"
+                className="bg-dark-gray text-light-text font-mont px-3 py-[5px] rounded-md"
               >
                 {tech}
               </span>
@@ -101,7 +101,7 @@ export const WorkItemsDesk = ({
           backgroundImage: `linear-gradient(0deg, rgba(4, 4, 4, 0.65), rgba(4, 4, 4, 0.65)), url(${image})`,
         }}
       >
-        <h1 className="font-montserrat-extrabold text-[40px] text-light-text">
+        <h1 className="font-mont font-extrabold text-[40px] text-light-text">
           {title}
         </h1>
         <WorkModalDesk
@@ -136,19 +136,19 @@ export const WorkModalDesk = ({
           : "hidden"
       }
     >
-      <p className="text-[18px] text-light-text font-montserrat">
+      <p className="text-[18px] text-light-text font-mont">
         {p1}
         <span className="block mt-[28px]">{p2}</span>
       </p>
       <div className=" flex flex-col">
-        <h1 className="font-montserrat-bold text-light-text text-[20px] leading-6 mb-4">
+        <h1 className="font-mont font-bold text-light-text text-[20px] leading-6 mb-4">
           Tech Stack
         </h1>
         <div className="flex flex-wrap gap-2">
           {tech.split(",").map((tech, key) => (
             <span
               key={key}
-              className="bg-dark-gray leading-7 text-light-text px-3 py-[5px] rounded-md"
+              className="bg-dark-gray leading-7 text-light-text font-mont px-3 py-[5px] rounded-md"
             >
               {tech}
             </span>
