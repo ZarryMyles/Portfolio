@@ -103,6 +103,7 @@ export default function Home() {
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest"></link>
+        <link href="/styles/globals.css" rel="stylesheet" />
 
         {/* Scripts */}
       </Head>
