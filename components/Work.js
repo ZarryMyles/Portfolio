@@ -21,8 +21,8 @@ export default function Work({ showModal, hideModal, modalVisible }) {
       p1: "A responsive portfolio website with lots of animations built for a designer",
       p2: "Framer Motion, Animate.Css and Swiper were some of the dependancies used to pull off the animations.",
       tech: "ReactJs, Tailwind CSS, Vercel (Hosting)",
-      sourceCode: "https://github.com/ZarryMyles/sam/tree/master",
-      liveDemo: "https://sam-ebon-psi.vercel.app/",
+      sourceCode: "https://github.com/ZarryMyles/sam/tree/October-2023-changes",
+      liveDemo: "https://www.shradha-b.com/",
       buttons: 2,
     },
     {
