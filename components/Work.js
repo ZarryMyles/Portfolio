@@ -11,8 +11,8 @@ export default function Work({ showModal, hideModal, modalVisible }) {
       p2: "10+ dependancies were used after optimising and the website was deployed on Github pages.",
       tech: "ReactJs, Tailwind CSS, Github Pages",
       sourceCode: "",
-      liveDemo: "https://genesismedia.in/#/",
-      buttons: 1,
+      // liveDemo: "https://genesismedia.in/#/",
+      buttons: 0,
     },
     {
       itemNo: 2,
